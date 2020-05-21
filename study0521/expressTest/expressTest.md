@@ -5,6 +5,10 @@
 8-8 : User-Agent 속성에 따른 응답<br>
 8-9 : query 속성을 사용한 요청 매개변수 추출<br>
 8-11 : 미들웨어를 사용한 속성 추가<br>
+8-13 : 라우팅 매개변수 추출<br>
+8-14 : 전체 선택자<br>
+8-15 : router 모듈화<br>
+routerA,routerB,routerC, index.js : router 모듈화 활용 예<br>
 
 response 객체의 속성 및 메서드<br>
 
@@ -18,3 +22,36 @@ response 객체의 속성 및 메서드<br>
     header() : 요청 헤더의 속성을 지정 또는 추출함
     accepts(type) : 요청 헤더의 Accept 속성을 확인함
     is(type) : 요청헤더의 Content-Type 속성을 확인함
+
+<hr>
+
+express 모듈과 함게 사용할 수 있는 미들웨어<br>
+
+    router : 페이지 라우트를 수행함
+    static : 특정 폴더를 서버의 루트 폴더에 올림
+    morgan : 로그 정보를 출력함
+    cookie parser : 쿠키를 분해함
+    body parser : POST 요청 매개변수를 추출함
+    connect-multiparty : POST 요청 매개변수를 추출함
+    express-session : 세션 처리를 수행함
+    csurf : CSRF 보안을 수행함
+    error handler : 예외 처리를 수행함
+    limit : POST 요청의 데이터를 제한함
+    vhost : 가상 호스트를 설정함
+
+<hr>
+
+app 객체의 메서드<br>
+
+    get(path, callback[, callback ...]) : GET 요청 발생시 이벤트 리스너
+    post(path, callback[, callback ...]) : POST 요청 발생시 이벤트 리스너
+    put(path, callback[, callback ...]) : PUT 요청 발생시 이벤트 리스너
+    delete(path, callback[, callback ...]) : DELETE 요청 발생시 이벤트 리스너
+    all(path, callback[, callback ...]) : 모든 요청이 발생시 이벤트 리스너
+
+
+<hr>
+
+params : /:id 처럼 ':'기호를 사용해 지정된 라우팅 매개변수
+query : ?name=A와 같은 요청 매개변수
+

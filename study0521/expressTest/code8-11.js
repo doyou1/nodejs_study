@@ -15,7 +15,9 @@ app.use(function(request,response,next){
 app.use(function(request,response,next){
 
     //응답
-    response.send('<h1>' + request.number + ' : ' + response.nubmer + '</h1>');
+    response.send('<h1>' + request.number + ' : ' + response.number + '</h1>');
+
+    //52 : 273
 });
 
 
