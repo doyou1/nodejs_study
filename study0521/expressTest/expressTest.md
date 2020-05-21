@@ -9,6 +9,9 @@
 8-14 : 전체 선택자<br>
 8-15 : router 모듈화<br>
 routerA,routerB,routerC, index.js : router 모듈화 활용 예<br>
+app : static 미델웨어를 사용한 이미제제공<br>
+8-19 : morgan 미들웨어<br>
+8-20 : morgan 미들웨어<br>
 
 response 객체의 속성 및 메서드<br>
 
@@ -55,3 +58,18 @@ app 객체의 메서드<br>
 params : /:id 처럼 ':'기호를 사용해 지정된 라우팅 매개변수
 query : ?name=A와 같은 요청 매개변수
 
+<hr>
+
+morgan 미들웨어의 토큰<br>
+
+    :req[header] : 요청 헤더를 나타냄
+    :res[header] : 응답 헤더를 나타냄
+    :http-version : HTTP 버전을 나타냄
+    :response-time : 응답 시간을 나타냄
+    :remote-addr : 원격 주소를 나타냄
+    :date[format] : 요청 시간을 나타냄
+    :method : 요청 방식을 나타냄
+    :url : 요청 url을 나타냄
+    :referrer : 이전 url을 나타냄
+    :User-Agent : 사용자 에이전트를 나타냄
+    :status : 상태 코드를 나타냄

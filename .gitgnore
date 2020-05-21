@@ -1,0 +1,8 @@
+## Ignore File ##
+*.log
+*.bak
+
+package-lock.json
+package.json
+
+/node_modules
