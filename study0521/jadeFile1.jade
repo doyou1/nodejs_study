@@ -1,0 +1,27 @@
+// - Code : 자바 스크립트 코트를 입력합니다
+// #{Value} : 데이터 출력
+// = Value : 데이터 출력
+
+doctype html
+html
+    head
+        title Index Page
+        style.
+            * {
+                margin : 0px; padding : 0px;
+            }
+            h1 {
+                color : red;
+            }
+    body
+        //JADE String
+        h1 #{name} ..!
+        h2= description
+        hr
+
+        - for(var i=0; i<10; i++){
+            p
+                a(href='http://www.naver.com') Go To Name #{i}
+        - }
+        script.
+            alert('H2')
