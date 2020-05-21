@@ -12,6 +12,8 @@ routerA,routerB,routerC, index.js : router 모듈화 활용 예<br>
 app : static 미델웨어를 사용한 이미제제공<br>
 8-19 : morgan 미들웨어<br>
 8-20 : morgan 미들웨어<br>
+8-22 : cookie-parser 미들웨어를 사용한 쿠키 추출<br>
+login.html,8-24 : body-parser를 이용한 기본 로그인 구현<br>
 
 response 객체의 속성 및 메서드<br>
 
@@ -73,3 +75,19 @@ morgan 미들웨어의 토큰<br>
     :referrer : 이전 url을 나타냄
     :User-Agent : 사용자 에이전트를 나타냄
     :status : 상태 코드를 나타냄
+
+<hr>
+
+cookie() 메서드의 옵션 속성<br>
+
+    httpOnly : 클라이언트의 쿠키 접근 권한을 지정함
+    secure : secure 속성을 지정함, document.cookie를 이용해 쿠키에 접속하는 것을 막는 옵션
+    expires : expires 속성을 지정함, 객체의 생명주기과 세부 형태 설정
+    maxAge : 상대적으로 expires를 지정함
+    path : path 속성을 지정함
+
+<hr>
+
+body-parser 미들웨어는 'application/x-www-form-urlencoded'라는 인코딩 방식만 지원함.
+이외의 인코딩 방식은 multiparty
+

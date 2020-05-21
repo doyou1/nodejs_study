@@ -1,0 +1,20 @@
+{
+  "name": "study0521",
+  "version": "1.0.0",
+  "description": "",
+  "main": "code7-12.js",
+  "scripts": {
+    "start": "echo \"Start Test\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^1.0.0",
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "morgan": "^1.10.0"
+  }
+}
