@@ -28,7 +28,6 @@ app.post('/login',function(request, response){
 
     //출력합니다
     console.log(username, password);
-    console.log(JSON.stringify(request.header));
     console.log(request.body);
 
     //로그인 확인

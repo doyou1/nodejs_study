@@ -105,3 +105,15 @@ body-parser 미들웨어는 'application/x-www-form-urlencoded'라는 인코딩 
 일반적으로 morgan, cookie-parser, body-parser 미들웨어 등은 거의 모든 페이지에서 활용하게 됩니다. 따라서 전역적으로 적용하는 경우가 많은데 파일 업로드 기능은 일부 페이지에서만 수행될 가능성이 높습니다. 이렇게 일부 페이지에서만 수행될 가능성이 높은 기능은 해당 페이지 라우팅에만 적용하는 것이 좋습니다.
 
 특정 페이지 라우팅에만 미들웨어를 적용하고 싶을 때는 위의 코드와 같이 진행할 수 있습니다<br>
+
+session() 메서드의 옵션<br>
+    name : 쿠기의 name 속성 지정
+    store : 세션 저장소를 지정
+    cookie : 생성할 cookie와 관련된 정보 지정
+    secret : 비밀 키를 지정함
+    resave : 세션이 변경되지 않았어도 세션 저장소에 반영(resave)할지 설정
+    saveUninitialized : 초기화되지 않은 세션을 세션 저장소에 저장할지 설정함
+    regenerate() : 세션을 다시 생성함
+    destroy() : 세션을 제거함
+    reload() : 세션을 다시 불러옴
+    save() : 세션을 저장함
