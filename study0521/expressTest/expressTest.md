@@ -14,6 +14,7 @@ app : static 미델웨어를 사용한 이미제제공<br>
 8-20 : morgan 미들웨어<br>
 8-22 : cookie-parser 미들웨어를 사용한 쿠키 추출<br>
 login.html,8-24 : body-parser를 이용한 기본 로그인 구현<br>
+HTMLPage.html, 8-27 : connect-multiparty 미들웨어
 
 response 객체의 속성 및 메서드<br>
 
@@ -91,3 +92,16 @@ cookie() 메서드의 옵션 속성<br>
 body-parser 미들웨어는 'application/x-www-form-urlencoded'라는 인코딩 방식만 지원함.
 이외의 인코딩 방식은 multiparty
 
+<hr>
+특정한 페이지 라우팅에만 미들웨어 적용<br>
+<code>
+    app.post('/',multipart, function(request,response){
+        /* 생략 */
+    });
+    /*
+    '/'경로에 진입했을 때, multiparty 미들웨어가 먼저 수행되고, 뒤따라 사용자가 직접 만든 함수가 호출됨
+    */
+</code>
+일반적으로 morgan, cookie-parser, body-parser 미들웨어 등은 거의 모든 페이지에서 활용하게 됩니다. 따라서 전역적으로 적용하는 경우가 많은데 파일 업로드 기능은 일부 페이지에서만 수행될 가능성이 높습니다. 이렇게 일부 페이지에서만 수행될 가능성이 높은 기능은 해당 페이지 라우팅에만 적용하는 것이 좋습니다.
+
+특정 페이지 라우팅에만 미들웨어를 적용하고 싶을 때는 위의 코드와 같이 진행할 수 있습니다<br>
