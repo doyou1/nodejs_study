@@ -1,3 +1,10 @@
+/*
+남은 과제
+- 예약 취소 기능 : 완료
+- 커플 예약 기능(가로로 2명 붙여 예약 가능)
+- 영화 및 날짜 선택
+*/
+
 //모듈 추출
 var socketio = require('socket.io');
 var express = require('express');
