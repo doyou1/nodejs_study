@@ -15,9 +15,10 @@ bodyParser.urlencoded({
 > 뷰 캐시를 사용하면 파일을 한 번만 읽어 들이므로, 두 번째 이후의 요청이 굉장히 빨라지며 입출력 부하도 없어집니다.
     하지만 파일을 한 번만 읽어 들이면 파일을 수정해도 해당 수정 사항이 반영되지 않습니다. 그래서 개발하는 동안에는 사용하지 않는 것이 좋습니다.
 
-Development 환경과 Production 환경의 차이
+* Development 환경과 Production 환경의 차이
 
- / |development모드|production모드|
+|development모드|production모드
+---|---|---
 오류 출력|출력|출력안함
 view cache|사용 안함|사용
 디버그 모드|설정하면 사용|사용 불가
