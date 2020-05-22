@@ -17,8 +17,8 @@ bodyParser.urlencoded({
 
 * Development 환경과 Production 환경의 차이
 
-|development모드|production모드
----|---|---
+---|development모드|production모드
+---|---|---|
 오류 출력|출력|출력안함
 view cache|사용 안함|사용
 디버그 모드|설정하면 사용|사용 불가
