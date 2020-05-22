@@ -1,5 +1,6 @@
 * express 프레임워크 설정
 
+키|의미
 ---|---|
 case sensitive routing|페이지 라우트를 할 대 대소문자를 구분할지 지정
 env|서버 환경 지정
