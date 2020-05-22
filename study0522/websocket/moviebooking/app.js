@@ -41,7 +41,7 @@ app.get('/seats',function(request,response,next){
     response.send(seats);
 });
 
-server.listen(20000,function(){
+server.listen(3000,'0.0.0.0',function(){
     console.log('Server Running at port:20000');
 });
 
